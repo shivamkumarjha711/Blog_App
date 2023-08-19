@@ -9,7 +9,7 @@ export const ReadBlog = ({blogData}) => {
         const singleArray = blogData.filter((e, i) => {
             return id == i
         })
-        setSingleData({...singleArray})
+        setSingleData({...singleArray[0]})
     }, [id])
 
     return (
@@ -17,7 +17,7 @@ export const ReadBlog = ({blogData}) => {
             <img src={singleData?.img} alt="" />
             <h1>Blog Title: {singleData?.title}</h1>
             <p>
-                Blog Content: {singleData?.desc}
+                Blog Content: {singleData?.content}
             </p>
         </div>
     )

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/form.css"
 
-export const AddBlog = ({ updateData, pervData }) => {
+export const AddBlog = ({ updateData, pervData=[] }) => {
     const [blogData, setBlogData] = useState({
         title: "",
         img: "",
@@ -10,7 +10,9 @@ export const AddBlog = ({ updateData, pervData }) => {
     })
 
     const submitData = () => {
+        const newData = [blogData, ...pervData]
         updateData([blogData, ...pervData])
+        localStorage.setItem("blogData", JSON.stringify(newData))
     }
 
     return(

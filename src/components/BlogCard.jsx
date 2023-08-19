@@ -7,7 +7,8 @@ export const BlogCard = (props) => {
 
     const deleteBlog = () => {
         const newArr = blogData.filter((e, i) => id !== i);
-        setBlogData([...newArr]);
+        setBlogData([...newArr])
+        localStorage.setItem("blogData", JSON.stringify(newArr))
     }
 
     return(
