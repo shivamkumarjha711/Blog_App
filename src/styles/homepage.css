@@ -1,0 +1,10 @@
+#blogParent {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+}
+
+button {
+    cursor: pointer;
+}

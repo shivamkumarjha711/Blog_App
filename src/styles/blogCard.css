@@ -1,0 +1,28 @@
+.blogcard {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    width: 280px;
+    height: 470px;
+    background-color: rgb(34, 41, 49);
+    color: white;
+    gap: 7px;
+}
+
+.blogcard img {
+    width: 280px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.blogcard h1 {
+    font-size: 18px;
+}
+
+.blogcard button {
+    width: 282px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}

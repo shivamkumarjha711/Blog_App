@@ -1,0 +1,25 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(50, 50, 93);
+    color: white;
+    align-items: center;
+    margin: 0px;
+}
+
+#header div {
+    display: flex;
+    gap: 10px;
+}
+
+#header h1 {
+    padding-left: 30px;
+}
+
+#header div button {
+    width: 120px;
+    height: 45px;
+    font-size: large;
+    cursor: pointer;
+}
